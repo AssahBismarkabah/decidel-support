@@ -1,20 +1,49 @@
-# Decidel Support
+# Decidel - Smarter Hacker News Client
 
-Public support site and privacy policy for the [Decidel](https://apps.apple.com/app/decidel) iOS app.
+The Hacker News client that reads between the lines. Decidel brings AI-powered summaries, smart topic filtering, and a beautiful reading experience to your favorite tech community.
 
-Hosted via GitHub Pages at: https://assahbismarkabah.github.io/decidel-support/
+## AI Summaries That Actually Help
 
-## Pages
+Tap any story to instantly surface key points, counterarguments, expert insights, and cited sources — without scrolling through hundreds of comments. Long threads, understood in seconds.
 
-| Page | URL |
-|------|-----|
-| Support | [/decidel-support/](https://assahbismarkabah.github.io/decidel-support/) |
-| Privacy Policy | [/decidel-support/privacy](https://assahbismarkabah.github.io/decidel-support/privacy) |
+## Your Feed, Your Rules
 
-## About Decidel
+Mute topics you don't care about with AI-powered semantic filtering. Use built-in filters for Crypto, Politics, and more — or build your own. Swipe to bookmark, share, or mark stories as read.
 
-Decidel is a Hacker News reader for iOS with AI-powered summaries, smart filtering, and multiple themes. Users bring their own API key from supported providers (OpenAI, Anthropic, Google Gemini, Groq).
+## Powerful Search & Discovery
 
-## Contact
+Browse Top, Best, New, Ask HN, and Show HN. Search all of Hacker News with filters for relevance, recency, and popularity. Save searches for quick access anytime.
 
-decideldecidel@gmail.com
+## Threaded Discussions
+
+Clean, readable comment threads with sort options — Best, Newest, or Most Controversial. Search within any discussion to find exactly what you need.
+
+## Beautiful & Customizable
+
+Light, Dark, Black (OLED), and Sepia themes with scheduled day/night switching. Adjust font style and size to make reading feel just right.
+
+## Offline & Exportable
+
+Bundle bookmarks for offline reading, then export stories and summaries to Markdown, Notion, or Obsidian — your research, your way.
+
+## Your AI, Your Keys
+
+Connect OpenAI, Google Gemini, Anthropic, or Groq with your own API key. API keys are stored securely in the iOS Keychain and never leave your device.
+
+## Also Includes
+
+Reading history, link previews for GitHub, arXiv & Wikipedia, compact and full display modes, story submission, comment replies, and user profiles.
+
+## Decidel Pro
+
+Go Pro for unlimited AI summaries, custom topic filters, offline reading bundles, saved searches, and advanced export options.
+
+## Links
+
+- [Support](https://assahbismarkabah.github.io/decidel-support/)
+- [Privacy Policy](https://assahbismarkabah.github.io/decidel-support/privacy)
+- Contact: decideldecidel@gmail.com
+
+---
+
+&copy; 2026 Decidel. All rights reserved.
