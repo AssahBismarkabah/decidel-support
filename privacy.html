@@ -9,86 +9,150 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #0D0D1A;
-            color: #E0E0E0;
+            background: #0a0a0a;
+            color: #e0e0e0;
             line-height: 1.7;
             -webkit-font-smoothing: antialiased;
         }
-        .container {
-            max-width: 680px;
-            margin: 0 auto;
-            padding: 60px 24px;
-        }
+        a { color: #f06000; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Nav */
         .nav {
+            background: #121212;
+            border-bottom: 1px solid #1a1a1a;
+            padding: 0 40px;
+            height: 60px;
             display: flex;
-            gap: 24px;
-            margin-bottom: 48px;
-            font-size: 0.9rem;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
-        .nav a {
-            color: #888;
-            text-decoration: none;
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        .nav-logo {
+            width: 28px;
+            height: 28px;
+            background: #f06000;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            font-weight: 800;
+            color: #fff;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+        .nav-links a {
+            color: #999;
+            font-size: 0.9rem;
             transition: color 0.2s;
         }
-        .nav a:hover, .nav a.active { color: #FF9500; }
-        h1 {
-            font-size: 2.2rem;
-            color: #FFFFFF;
-            margin-bottom: 8px;
+        .nav-links a:hover { color: #fff; text-decoration: none; }
+        .nav-links a.active { color: #f06000; }
+
+        /* Hero */
+        .hero {
+            background: #121212;
+            text-align: center;
+            padding: 64px 24px;
+        }
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 12px;
             letter-spacing: -0.02em;
         }
-        .updated {
+        .hero p {
             color: #666;
-            font-size: 0.9rem;
-            margin-bottom: 48px;
+            font-size: 0.92rem;
         }
-        h2 {
-            font-size: 1.25rem;
-            color: #FFFFFF;
+
+        /* Content */
+        .content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+        .content h2 {
+            font-size: 1.2rem;
+            color: #fff;
             margin-top: 40px;
             margin-bottom: 12px;
             letter-spacing: -0.01em;
         }
-        h3 {
-            color: #CCC;
+        .content h3 {
             font-size: 1.05rem;
+            color: #ccc;
             margin-top: 24px;
             margin-bottom: 8px;
         }
-        p { margin-bottom: 16px; color: #B0B0B0; }
-        ul {
+        .content p {
+            color: #888;
+            font-size: 0.95rem;
+            margin-bottom: 16px;
+        }
+        .content ul {
             margin-bottom: 16px;
             padding-left: 24px;
-            color: #B0B0B0;
+            color: #888;
+            font-size: 0.95rem;
         }
-        li { margin-bottom: 8px; }
-        a { color: #FF9500; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        strong { color: #D0D0D0; }
+        .content li { margin-bottom: 8px; }
+        .content strong { color: #ccc; }
+
+        /* Footer */
         .footer {
-            margin-top: 64px;
-            padding-top: 24px;
-            border-top: 1px solid #1E1E34;
-            font-size: 0.85rem;
-            color: #555;
+            border-top: 1px solid #1a1a1a;
+            padding: 24px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            font-size: 0.82rem;
+            color: #444;
         }
-        .footer a { color: #666; }
-        .footer a:hover { color: #FF9500; }
+        .footer a { color: #555; }
+        .footer a:hover { color: #f06000; }
+
+        @media (max-width: 600px) {
+            .nav { padding: 0 20px; }
+            .nav-links { gap: 20px; }
+            .hero h1 { font-size: 1.8rem; }
+            .footer { flex-direction: column; gap: 8px; }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <nav class="nav">
+    <nav class="nav">
+        <div class="nav-left">
+            <div class="nav-logo">D</div>
+            <span>Decidel</span>
+        </div>
+        <div class="nav-links">
             <a href="/decidel-support/">Support</a>
-            <a href="/decidel-support/privacy" class="active">Privacy Policy</a>
-        </nav>
+            <a href="/decidel-support/privacy" class="active">Privacy</a>
+        </div>
+    </nav>
 
+    <div class="hero">
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: February 24, 2026</p>
+        <p>Last updated: February 24, 2026</p>
+    </div>
 
+    <div class="content">
         <p>Decidel ("we", "our", or "the app") is a Hacker News reader for iOS with optional AI-powered features. We are committed to protecting your privacy. This policy explains what data the app accesses and how it is handled.</p>
 
         <h2>1. Data We Do Not Collect</h2>
@@ -143,11 +207,11 @@
 
         <h2>7. Contact</h2>
         <p>If you have questions about this privacy policy, contact us at <a href="mailto:decideldecidel@gmail.com">decideldecidel@gmail.com</a>.</p>
+    </div>
 
-        <div class="footer">
-            <span>&copy; 2026 Decidel</span>
-            <a href="/decidel-support/">Support</a>
-        </div>
+    <div class="footer">
+        <span>&copy; 2026 Decidel. All rights reserved.</span>
+        <a href="/decidel-support/">Support</a>
     </div>
 </body>
 </html>
