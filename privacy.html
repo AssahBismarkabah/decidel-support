@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decidel - Privacy Policy</title>
+    <meta name="description" content="Privacy policy for Decidel, a Hacker News reader for iOS.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0D0D1A;
+            color: #E0E0E0;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        .nav {
+            display: flex;
+            gap: 24px;
+            margin-bottom: 48px;
+            font-size: 0.9rem;
+        }
+        .nav a {
+            color: #888;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .nav a:hover, .nav a.active { color: #FF9500; }
+        h1 {
+            font-size: 2.2rem;
+            color: #FFFFFF;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+        .updated {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 48px;
+        }
+        h2 {
+            font-size: 1.25rem;
+            color: #FFFFFF;
+            margin-top: 40px;
+            margin-bottom: 12px;
+            letter-spacing: -0.01em;
+        }
+        h3 {
+            color: #CCC;
+            font-size: 1.05rem;
+            margin-top: 24px;
+            margin-bottom: 8px;
+        }
+        p { margin-bottom: 16px; color: #B0B0B0; }
+        ul {
+            margin-bottom: 16px;
+            padding-left: 24px;
+            color: #B0B0B0;
+        }
+        li { margin-bottom: 8px; }
+        a { color: #FF9500; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        strong { color: #D0D0D0; }
+        .footer {
+            margin-top: 64px;
+            padding-top: 24px;
+            border-top: 1px solid #1E1E34;
+            font-size: 0.85rem;
+            color: #555;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer a { color: #666; }
+        .footer a:hover { color: #FF9500; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <a href="/decidel-support/">Support</a>
+            <a href="/decidel-support/privacy" class="active">Privacy Policy</a>
+        </nav>
+
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: February 24, 2026</p>
+
+        <p>Decidel ("we", "our", or "the app") is a Hacker News reader for iOS with optional AI-powered features. We are committed to protecting your privacy. This policy explains what data the app accesses and how it is handled.</p>
+
+        <h2>1. Data We Do Not Collect</h2>
+        <p>Decidel does not operate any backend servers. We do not collect, store, or transmit any personal data to our own infrastructure. Specifically:</p>
+        <ul>
+            <li>We do not collect analytics or usage data</li>
+            <li>We do not use tracking or advertising SDKs</li>
+            <li>We do not create user accounts or profiles</li>
+            <li>We do not share data with third parties for marketing purposes</li>
+        </ul>
+
+        <h2>2. Data Stored on Your Device</h2>
+        <p>The following data is stored locally on your device and never leaves it unless you explicitly use an AI feature:</p>
+        <ul>
+            <li><strong>App preferences:</strong> Theme, sort order, filter settings, and other preferences stored via iOS UserDefaults</li>
+            <li><strong>API keys:</strong> If you provide an AI provider API key, it is stored securely in the iOS Keychain and only transmitted to your selected AI provider</li>
+            <li><strong>Saved searches and offline bundles:</strong> Stored locally on your device</li>
+        </ul>
+
+        <h2>3. Third-Party Services</h2>
+
+        <h3>Hacker News API</h3>
+        <p>Decidel fetches public content (stories, comments, user profiles) from the <a href="https://github.com/HackerNews/API" rel="noopener">Hacker News API</a> and the <a href="https://hn.algolia.com/api" rel="noopener">Algolia HN Search API</a>. These requests contain no personal information beyond your device's IP address, which is inherent to any internet connection.</p>
+
+        <h3>AI Providers (Optional)</h3>
+        <p>If you choose to use AI summary features, article content and comments are sent to the AI provider you configure. Supported providers include:</p>
+        <ul>
+            <li><a href="https://openai.com/privacy" rel="noopener">OpenAI</a> (GPT models)</li>
+            <li><a href="https://www.anthropic.com/privacy" rel="noopener">Anthropic</a> (Claude models)</li>
+            <li><a href="https://policies.google.com/privacy" rel="noopener">Google</a> (Gemini models)</li>
+            <li><a href="https://groq.com/privacy-policy/" rel="noopener">Groq</a> (open-source models)</li>
+        </ul>
+        <p>Your API key is sent directly from your device to the provider's servers. We never have access to your API key or the content processed by these providers. Each provider's own privacy policy governs how they handle data sent to their APIs.</p>
+        <p><strong>AI features are entirely optional.</strong> Decidel is fully functional without configuring any AI provider.</p>
+
+        <h3>Apple Services</h3>
+        <p>Decidel uses Apple's StoreKit for in-app purchases (Decidel Pro subscription and tips). These transactions are handled entirely by Apple under their <a href="https://www.apple.com/legal/privacy/" rel="noopener">privacy policy</a>. We do not receive or store any payment information.</p>
+
+        <h2>4. Children's Privacy</h2>
+        <p>Decidel is not directed at children under 13. We do not knowingly collect information from children.</p>
+
+        <h2>5. Data Deletion</h2>
+        <p>Since all data is stored locally on your device:</p>
+        <ul>
+            <li>Delete your API keys at any time in Settings</li>
+            <li>Clear saved searches and offline bundles within the app</li>
+            <li>Uninstalling the app removes all locally stored data</li>
+        </ul>
+
+        <h2>6. Changes to This Policy</h2>
+        <p>We may update this privacy policy from time to time. Changes will be reflected on this page with an updated date.</p>
+
+        <h2>7. Contact</h2>
+        <p>If you have questions about this privacy policy, contact us at <a href="mailto:decideldecidel@gmail.com">decideldecidel@gmail.com</a>.</p>
+
+        <div class="footer">
+            <span>&copy; 2026 Decidel</span>
+            <a href="/decidel-support/">Support</a>
+        </div>
+    </div>
+</body>
+</html>
