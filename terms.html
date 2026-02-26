@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decidel - Terms of Use</title>
+    <meta name="description" content="Terms of Use for Decidel, a Hacker News reader for iOS.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        a { color: #f06000; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Nav */
+        .nav {
+            background: #121212;
+            border-bottom: 1px solid #1a1a1a;
+            padding: 0 40px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        .nav-logo {
+            width: 28px;
+            height: 28px;
+            background: #f06000;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            font-weight: 800;
+            color: #fff;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+        .nav-links a {
+            color: #999;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover { color: #fff; text-decoration: none; }
+        .nav-links a.active { color: #f06000; }
+
+        /* Hero */
+        .hero {
+            background: #121212;
+            text-align: center;
+            padding: 64px 24px;
+        }
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+        .hero p {
+            color: #666;
+            font-size: 0.92rem;
+        }
+
+        /* Content */
+        .content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+        .content h2 {
+            font-size: 1.2rem;
+            color: #fff;
+            margin-top: 40px;
+            margin-bottom: 12px;
+            letter-spacing: -0.01em;
+        }
+        .content p {
+            color: #888;
+            font-size: 0.95rem;
+            margin-bottom: 16px;
+        }
+        .content ul {
+            margin-bottom: 16px;
+            padding-left: 24px;
+            color: #888;
+            font-size: 0.95rem;
+        }
+        .content li { margin-bottom: 8px; }
+        .content strong { color: #ccc; }
+
+        /* Footer */
+        .footer {
+            border-top: 1px solid #1a1a1a;
+            padding: 24px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.82rem;
+            color: #444;
+        }
+        .footer a { color: #555; margin-left: 20px; }
+        .footer a:hover { color: #f06000; }
+
+        @media (max-width: 600px) {
+            .nav { padding: 0 20px; }
+            .nav-links { gap: 16px; }
+            .hero h1 { font-size: 1.8rem; }
+            .footer { flex-direction: column; gap: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-left">
+            <div class="nav-logo">D</div>
+            <span>Decidel</span>
+        </div>
+        <div class="nav-links">
+            <a href="/decidel-support/">Support</a>
+            <a href="/decidel-support/privacy">Privacy</a>
+            <a href="/decidel-support/terms" class="active">Terms</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Terms of Use</h1>
+        <p>Last updated: February 26, 2026</p>
+    </div>
+
+    <div class="content">
+        <p>By downloading or using Decidel ("the app"), you agree to these Terms of Use. If you do not agree, do not use the app.</p>
+
+        <h2>1. Description of Service</h2>
+        <p>Decidel is a Hacker News reader for iOS that provides access to publicly available content from Hacker News. The app also offers optional AI-powered summary features using third-party AI providers configured by the user.</p>
+
+        <h2>2. Use of the App</h2>
+        <p>You agree to use Decidel in compliance with all applicable laws and regulations. You may not:</p>
+        <ul>
+            <li>Use the app for any unlawful purpose</li>
+            <li>Reverse engineer, decompile, or disassemble the app</li>
+            <li>Attempt to gain unauthorized access to any systems connected to the app</li>
+            <li>Use the app to harass, abuse, or harm others</li>
+        </ul>
+
+        <h2>3. Third-Party Content</h2>
+        <p>Decidel displays content from Hacker News, which is user-generated and publicly available. We do not control, endorse, or assume responsibility for any third-party content displayed in the app. Links to external websites are provided for convenience and are subject to those websites' own terms and policies.</p>
+
+        <h2>4. AI Features and API Keys</h2>
+        <p>AI summary features require you to provide your own API key from a supported third-party provider (OpenAI, Anthropic, Google Gemini, or Groq). By using these features, you agree to:</p>
+        <ul>
+            <li>Comply with the terms of service of your chosen AI provider</li>
+            <li>Accept responsibility for any costs incurred through your API key usage</li>
+            <li>Understand that article content is sent to your selected provider for processing</li>
+        </ul>
+        <p>We are not responsible for the availability, accuracy, or conduct of any third-party AI provider.</p>
+
+        <h2>5. Subscriptions and Purchases</h2>
+        <p>Decidel offers an optional auto-renewable subscription (Decidel Pro) and consumable in-app purchases (tips).</p>
+        <ul>
+            <li><strong>Decidel Pro Monthly:</strong> Billed monthly. Renews automatically unless canceled at least 24 hours before the end of the current billing period.</li>
+            <li><strong>Decidel Pro Annual:</strong> Billed annually. Renews automatically unless canceled at least 24 hours before the end of the current billing period.</li>
+            <li>Payment is charged to your Apple ID account at confirmation of purchase</li>
+            <li>Manage or cancel subscriptions in your device's Settings > Apple ID > Subscriptions</li>
+        </ul>
+        <p>All purchases are processed by Apple and subject to Apple's <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Licensed Application End User License Agreement</a>.</p>
+
+        <h2>6. Intellectual Property</h2>
+        <p>The Decidel app, its design, and original content are the property of Decidel. Hacker News content belongs to its respective authors and is accessed via publicly available APIs.</p>
+
+        <h2>7. Disclaimer of Warranties</h2>
+        <p>Decidel is provided "as is" without warranties of any kind, express or implied. We do not guarantee that the app will be uninterrupted, error-free, or that AI-generated summaries will be accurate or complete.</p>
+
+        <h2>8. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by law, Decidel and its developers shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the app, including but not limited to costs incurred through third-party API usage.</p>
+
+        <h2>9. Changes to These Terms</h2>
+        <p>We may update these Terms of Use from time to time. Changes will be reflected on this page with an updated date. Continued use of the app after changes constitutes acceptance of the revised terms.</p>
+
+        <h2>10. Contact</h2>
+        <p>If you have questions about these terms, contact us at <a href="mailto:decideldecidel@gmail.com">decideldecidel@gmail.com</a>.</p>
+    </div>
+
+    <div class="footer">
+        <span>&copy; 2026 Decidel. All rights reserved.</span>
+        <span>
+            <a href="/decidel-support/">Support</a>
+            <a href="/decidel-support/privacy">Privacy</a>
+        </span>
+    </div>
+</body>
+</html>
